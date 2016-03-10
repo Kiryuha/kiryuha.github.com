@@ -1,0 +1,157 @@
+﻿BODY {
+    background:#c0c0c0;
+    margin: 0;
+    padding: 0;
+    }
+
+img {
+    border: 0;
+    }
+
+a {text-decoration: none;}
+
+#top {position:relative; width:auto; height: 98px;}
+    .top_left, .top_right {height:100%;  width:49%;}
+    .top_left {float:left; background: url(img/top_bg_full.png) repeat-x;}
+    .top_right {float:right; background: url(img/top_bg_full2.png) repeat-x;}
+
+.top {position:absolute; left:50%; width:1100px; background: url(img/top_bg_big.png) no-repeat; margin:0 0 0 -550px; height: 98px; overflow: hidden;}
+    .top_logo, .top_log {height:98px; width:270px;}
+    .top_logo {float:left; background:url(img/logo.png) no-repeat; margin:8px 0 8px 100px;}
+    .top_log {float:right; background:url(img/top_log.png) repeat-x; margin:0 70px 0 0; overflow:hidden;}
+        .top_log_text {float:left; margin:37px 0 0 25px;padding:0 10px 0 0; color:#fff; font: normal 11px arial;}
+        .top_log_text p {line-height:11px; margin:0;}
+        .top_log_button {float:left; margin:36px 20px 0 0; height:24px; width:70px; background:url(img/top_log_button.png) 10px 0 no-repeat; border-left:2px solid #717171;}
+        .span_messages {color:#e8d590;}
+
+
+#menu {background:url(img/menu_bg.png) repeat-x; height:50px; width:auto; margin:0 auto; font: bold 12px arial;}
+    .menu {width:965px; margin:0 auto; text-align:center; overflow:hidden;}
+    .menu a {color:#333; text-shadow: 1px 1px 1px #fff;}
+    .buttons {float:left; line-height:50px; width:190px;}
+    .separator {float:left; width:2px; height:50px; background:url(img/menu_separator.png) no-repeat;}
+
+
+
+#page {background: #fff; width:1100px; margin:0 auto; overflow: hidden;}
+    .shadow {background: url(img/page_shadow.png) no-repeat; height:16px; width:1100px;}
+    .header {background:url(img/header_bg.png) repeat-x; height:56px; width:960px; margin:0 auto; overflow: hidden;}
+    .welcome {float:left; margin:0 15px 0 60px; height:56px; width:130px; text-align:center; overflow: hidden;}
+        .p_red {color:#c10000; font: bold 28px arial; margin:5px 0 0 0;}
+        .p_grey {color:#666; font: normal 10px arial; margin:0;}
+    .header_separator {float:left; background: url(img/header_separator.png) no-repeat; height:56px; width:1px;}
+    .text_block {float:left; line-height:1px; height:56px; width:670px; margin:13px 0 0 15px; color:#666; font: normal 11px arial;}
+
+    .welcome_2 {width:960px; height:64px; margin:15px auto 5px auto; overflow: hidden;}
+        .welcome2_1 {float:left; background: url(img/welcome2_1.png) repeat-x; width:600px; height:30px; color:#666; font: bold 14px arial;}
+            .welcome2_1 p {margin:0 0 0 10px; line-height:30px;}
+        .announcement {float:left; background: url(img/welcome2_1.png) repeat-x; width:135px; height:30px; color:#666; font: bold 12px arial; line-height:30px;}
+        .welcome2_2 {float:left; background: url(img/welcome2_2.png) repeat-x; width:575px; height:34px; color:#666; font: normal 11px arial; padding:6px 15px 0 10px; line-height:11px;}
+        .pagger {float:left; background: url(img/welcome2_2.png) repeat-x; width:135px; height:34px;}
+            .prev, .next {float:left; cursor:pointer; font: normal 12px arial; line-height:34px;}
+            .prev {width:53px; background:url(img/prev_arrow.png) left center no-repeat; padding:0 0 0 12px;}
+            .next {width:35px; background:url(img/next_arrow.png) right center no-repeat; padding:0 0 0 5px;}
+            .pagger_sep {float:left; width:1px; height:34px; background:url(img/pagger_sep.png) no-repeat;}
+        .watches {float:right; width:220px; height:64px; background:url(img/clock.png) no-repeat;}
+
+    .icon_grafic_tp_block {width:960px; height:300px; margin:5px auto;}
+        .time_period {float:right; width:220px; height:300px; background:url(img/center_chart_bg.png) repeat-x;}
+            .p_tp {float:left; width:220px; color:#c10000; font: bold 16px arial; margin:10px 0 0 0; text-align:center;}
+            * html .p_tp {margin:0; padding:0;}
+            .timer {float:left; width:220px; height:70px; background:url(img/timer.png) no-repeat;  margin:0; padding:0;}
+            .timer_dhms {float:left; width:200px; height:35px; font: bold 10px arial; color:#666; margin:0 0 0 20px;}
+            .timer_sep {float:left; width:220px; height:1px; background:url(img/timer_sep.png) no-repeat;}
+            .tp_link {width:220px; height:35px; margin:10px 0 20px 0; overflow: hidden;}
+                .tp_link p {font: bold 13px arial; color:#666; margin:0 0 0 20px;}
+                .tp_link a {font: normal 11px arial; color:#969696; background: url(img/table_arrow.png) no-repeat; margin:0 0 0 40px; padding:0 0 0 10px;}
+            .timer_bar {position:relative; background: url(img/timer_bar.png) no-repeat; width:171px; height:24px; margin:5px 18px; padding:0 0 0 10px; font: normal 12px arial; color:#595959; line-height:24px;}
+                .timer_bar_text {width:145px; overflow:hidden;}
+                .timer_bar_slide {position:absolute; display:none; width:181px; height:168px; margin:0 0 0 -10px; z-index:10; overflow:auto;}
+                    .timer_bar_slide_row {width:100%; height:24px; background: url(img/timer_bar_slide_bg.png) no-repeat; overflow:hidden;}
+                        .timer_bar_slide_row:hover {background:#7a7a7a; color:#ccc;}
+                        .timer_bar_slide_row.chosed {background:#7a7a7a; color:#ccc;}
+                        .timer_bar_slide_row p {margin: 0 0 0 10px;}
+            .timer_lc_button {background: url(img/timer_lc_button.png) no-repeat; width:108px; height:24px; margin:15px 0 0 53px;}
+                .timer_lc_button a {display:block; width:108px; height:24px;}
+        .center_chart {float:left; width:735px; height:300px; background:url(img/center_chart_bg.png) repeat-x;}
+        * html .center_chart {width:730px;}
+            .icon_block {float:left; width:222px; text-align:center; padding:0 0 0 14px; font: bold 10px arial;}
+                .icon {float:left; width:103px; height:64px; background:url(img/icon_bg.png) no-repeat; margin:3px; padding:15px 0 0 0; color:#7b7b7b;}
+                .icon img {margin:0 0 10px 0;}
+                .p_icon {color:#c10000; font: bold 18px arial; margin:10px 0 0 0;}
+            .pic {float:left; width:494px; height;300px;}
+
+    .sum_of_today {background: url(img/chapt.png) repeat-x; width:950px; height:29px; margin:0 auto; padding:0 0 0 10px; color:#666; font: bold 14px arial; line-height:29px; overflow: hidden;}
+        .sum_of_today a {float:right; background: url(img/loupe.png) left center no-repeat; width:190px; padding:0 0 0 15px; color:#666; font: normal 12px arial; line-height:29px;}
+        .sum_of_today_table {background: url(img/sum_of_today_2.png) repeat-x; width:960px; height:86px; margin:0 auto;}
+        .sum_of_today_table table {width:480px; font: normal 11px arial; padding:5px 0;}
+            .td2, .td3 {text-align:center;}
+            .td2, .td4 {color:#000;}
+            .td1 {width:120px; color:#c10000; text-align:right; font:bold 11px arial;}
+            .td2 {width:30px;}
+            .td3 {background: url(img/table_arrow.png) no-repeat; width:30px; color:#9f9f9f;}
+            .td4 {width:50px; text-align:right;}
+        .chart_2 {float:right; width:430px; height:86px;}
+
+
+    .info_block {width:960px; margin:5px auto; height:auto; overflow: hidden;}
+        .sum_of_cur {float:left; background: url(img/chapt.png) repeat-x; width:510px; height:29px; padding:0 0 0 10px; color:#666; font: bold 14px arial; line-height:29px;}
+            .sum_of_cur a {float:right; background: url(img/loupe.png) left center no-repeat; width:145px; padding:0 0 0 15px; color:#666; font: normal 12px arial; line-height:29px;}
+            .soc_table {float:left; width:520px; margin:0; padding:0;}
+                .soc_table_data {width:520px; background:#f0f0f0; font: normal 11px arial; color:#7c7c7c; text-align:right; margin:0; padding:0; border-collapse:collapse;}
+                .soc_table_data .soc_td1 {background:#e3e3e3;}
+                .soc_table_tr {background:#fff;}
+                .soc_table_tr .soc_td1 {background:#eee;}
+                .soc_table_data tr {border-bottom:1px solid #d6d6d6; height:25px;}
+                .soc_table_data td {border-left: 1px dashed #d6d6d6; padding:0 10px;}
+                .soc_table_data a {color:#000; text-decoration:underline;}
+                .soc_table_data .soc_td1 {border:none;}
+                .soc_td1, .soc_td5 {font: bold 11px arial;}
+                .soc_td1 {width:23%;}
+                .soc_td2 {width:17%;}
+                .soc_td3 {width:15%; text-align:left;}
+                .soc_td4 {width:10%;}
+                .soc_td5 {width:15%;}
+                .soc_table_data .soc_table_cap {background:#fcf6f7; font: bold 10px tahoma; color:#d45562; text-align:center; border:1px solid #efcbd1; border-right:none; height:18px;}
+                .soc_table_cap .soc_td1 {background:#f6dfe3;}
+                .soc_table_cap .soc_td3 {text-align:center;}
+                .soc_table_cap .soc_td1, .soc_table_cap .soc_td2, .soc_table_cap .soc_td3, .soc_table_cap .soc_td4, .soc_table_cap .soc_td5 {border-bottom:1px solid #efcbd1; height:18px; border-left:none; padding:0; border-spacing: 7px 11px;}
+                .soc_table_data .tr_blank {height:5px; border-bottom:none;}
+                .soc_table_data .tr_blank td {background:#fff; border-left:none;}
+
+
+        .acc_snap_news {float:right; width:435px; overflow: hidden;}
+            .acc_snap {background: url(img/chapt.png) repeat-x; width:425px; height:29px; padding:0 0 0 10px; color:#666; font: bold 14px arial; line-height:29px;}
+                .acc_management {background: url(img/account_bg.png) repeat-x; height:225px;}
+                    .acc_owner {float:left; height:85px; width:180px; padding:0 0 0 10px;}
+                        .p_name {font: normal 22px arial; margin:10px 0 0 0;}
+                        .p_info {font: normal 12px arial; color:#666; margin:4px 0 0 0;}
+                    .acc_table {float:left; width:435px; height:135px; font: normal 12px arial;}
+                        .acc_table td {width:145px; height:24px; border-top: 1px dotted #b0b0b0; padding:0 0 0 10px;}
+                        .acc_td1 {color:#c10000; font: bold 12px arial;}
+                        .acc_td2 {color:#666;}
+                        .acc_td3 {color:#b8b8b8; background: url(img/acc_table_arrow.png) no-repeat;}
+                        .acc_td3 a {color:#464646; text-decoration:underline;}
+                .news {background: url(img/chapt.png) repeat-x; width:425px; height:29px; padding:0 0 0 10px; color:#666; font: bold 14px arial; line-height:29px;}
+                    .news a {float:right; background: url(img/loupe.png) left center no-repeat; width:55px; padding:0 0 0 15px; color:#666; font: normal 12px arial; line-height:29px;}
+                    .news_block, #content_1 {float:left; width:435px; height:200px; overflow:auto;}
+                        .news_icon {float:left; width:25px; height:76px; background: url(img/news_icon.png) no-repeat; margin:10px 0 0 0;}
+                        .news_row {float:left; width:395px; height:76px; color:#666; font: normal 11px arial; margin:0; padding:10px 0 0 0;}
+                            .news_name, .news_date {color:#c10000; height:15px;}
+                            .news_name {float:left; width:280px; font: bold 12px arial; margin:0;}
+                            .news_date {float:right; width:100px; text-align:right; font: bold 10px tahoma; margin:0;}
+                            .news_row a {background: url(img/news_arrows.png) no-repeat; color:#363636; text-decoration:underline; font: bold 11px arial; padding:0 0 0 10px;}
+                            .news_row.even {background:#f5f5f5;}
+
+
+
+#footer {width:auto; height:149px; background: url(img/footer_bg.png) repeat-x; margin:0 auto; overflow: hidden;}
+    .footer {width:1100px; margin:0 auto;  }
+    .bottom_logo {float:right; background:url(img/logo.png) no-repeat; width:350px; height:149px; margin:25px 0;}
+    .footer_info {float:left; width:600px; height:100px; margin:45px 60px;}
+        .footer_info a {font: bold 11px tahoma; color:#333; padding:0 10px; border-right:2px solid #333;}
+        .footer_info a.last {border:none;}
+        .footer_info p {font: normal 11px tahoma; color:#333;}
+        .footer_info p.another {font: normal 9px tahoma;}
+
+

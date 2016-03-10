@@ -1,0 +1,98 @@
+﻿#countdown {float:left; width:180px; height:35px;}
+
+.countdownHolder{
+ padding:0 20px 0 20px;
+/*	font: 20px/1.5 'Open Sans Condensed',sans-serif;*/
+  text-align:center;
+/*	letter-spacing:-3px; */
+	background:#f5f5f5;
+	font: bold 29px arial;
+}
+
+.position{
+/*	display: inline-block;*/
+	float:left;
+	height:30px /*1.6em*/;
+	overflow: hidden;
+	position: relative;
+	width:16px /*1.05em*/;
+}
+
+.digit{
+/*	position:absolute;*/
+	float:left;
+	display:block;
+	height:35px;
+/*	width:20px 1em*/;
+/*	background-color:#444;*/
+/*	border-radius:0.2em;*/
+	text-align:center;
+	color:#666;
+/*	letter-spacing:-1px;*/
+}
+
+/*.digit.static{
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+
+	background-image: linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -o-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #3A3A3A),
+		color-stop(0.5, #444444)
+	);
+}*/
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+/*  display:inline-block;*/
+	width:15px;
+	height:30px /*1.6em*/;
+/*	position:relative;*/
+float:left;
+background:url(img/dots.png) center center no-repeat;
+padding:5px 0 0 0;
+}
+
+/*.countDiv:before,
+.countDiv:after{
+/*  position:absolute;*/
+  float:left;
+/*	width:3px;
+	height:3px;*/
+	background:#b0b0b0;
+/*	border-radius:50%;*/
+/*	left:30%;*/
+/*	margin-left:-3px;*/
+/*	top:8px /*0.5em*/; */
+/*	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);*/
+	content:"RR";
+}
+
+/*.countDiv:after{
+	top:22px /*0.9em*/;
+} */
+
+
+.digit.static, .digit {background:none !important;}
+.countDiv0 {display:none !important;}
+.countDays {float:left; width:45px;}
