@@ -1,5 +1,29 @@
 ﻿*{margin:0; padding:0;}
 
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('../font/robotocondensed-bold-webfont.eot');
+    src: url('../font/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/robotocondensed-bold-webfont.woff2') format('woff2'),
+         url('../font/robotocondensed-bold-webfont.woff') format('woff'),
+         url('../font/robotocondensed-bold-webfont.ttf') format('truetype'),
+         url('../font/robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cuprumbold';
+    src: url('../font/cuprum-bold-webfont.eot');
+    src: url('../font/cuprum-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/cuprum-bold-webfont.woff2') format('woff2'),
+         url('../font/cuprum-bold-webfont.woff') format('woff'),
+         url('../font/cuprum-bold-webfont.ttf') format('truetype'),
+         url('../font/cuprum-bold-webfont.svg#cuprumbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @media only screen and (max-width: 992px) {
 	h1 {font-size:1.5em !important;}
 	.slogan {width:80% !important;}
@@ -22,8 +46,6 @@
 	.footer_text p {font-size:0.7em !important; margin-top:10px !important;}
 	figure {width:24.34% !important;}
 	.item_img, .item_info {width:100% !important;}
-	
-	
 }  
 
 @media only screen and (max-width: 360px) {
@@ -68,7 +90,7 @@ HTML {position:relative; min-height:100%; margin:0; padding:0;}	/* position и h
 
 BODY {margin:0 auto; padding:0; background:url(../img/background_body.jpg) no-repeat #808080; background-size:100%;}
 
-img, p, a, h1, h2, h3, figure {font:normal 1em 'Roboto Condensed', sans-serif; border:0; margin:0; padding:0; outline:none;}
+img, p, a, h1, h2, h3, figure {font:normal 1em 'roboto_condensedbold', sans-serif; border:0; margin:0; padding:0; outline:none;}
 
 a {text-decoration:none;}
 
@@ -84,7 +106,7 @@ header {width:100%; height:130px; background-color:rgba(104, 104, 104, .5); over
 		
 nav {width:100%; height:50px; background-color: rgba(248,248,248, 0.5); top:120px;}
 	.buttons_block {max-width:1000px; margin:0 auto; overflow:hidden;}
-		.buttons {float:left; font-size:0.9em; text-shadow:1px 1px 1px #fff; line-height:50px; color:#333; padding:0 10px; font-family: 'Cuprum',sans-serif;}
+		.buttons {float:left; font-size:0.9em; text-shadow:1px 1px 1px #fff; line-height:50px; color:#333; padding:0 10px; font-family:'cuprumbold',sans-serif;}
 			/*.buttons:hover {background-color: rgba(144, 144, 144, 0.5);}*/
 			.buttons:hover {background: linear-gradient(to right, #F0F0F0 40%,#C8C8C8 50%,#F0F0F0 60%); animation: buttons 4s ease infinite; background-size: 400% 400%;}
 	.nav_top_fixed {position:fixed; background-color:#F8F8F8; z-index:1000; box-shadow: 0 0 10px rgba(0,0,0,0.8);}
@@ -98,7 +120,7 @@ nav {width:100%; height:50px; background-color: rgba(248,248,248, 0.5); top:120p
 				.slogan a {display:inline-block; padding:10px; color:#ffffff; font-size:1.1em; border:5px solid #ffffff;}
 			
 			.chapter {width:100%; height:50px; background-color: rgba(208,208,208, 0.5);}
-				.chapter h2 {max-width:1000px; margin:0 auto; padding:0 0 0 20px; font:normal 1.1em/50px 'Cuprum',sans-serif; color:#333; text-shadow:1px 1px 1px #fff;}
+				.chapter h2 {max-width:1000px; margin:0 auto; padding:0 0 0 20px; font:normal 1.1em/50px 'cuprumbold',sans-serif; color:#333; text-shadow:1px 1px 1px #fff;}
 			.goods_block {max-width:1000px; margin:10px auto; flex-wrap:wrap; display:flex;}
 				figure {float:left; margin:0.33%; margin-top:5px; width:16%; background:#fff; text-align:center; color:#333; overflow:hidden;}
 					figure img {box-shadow: 0 0 10px rgba(0,0,0,0.8); border-radius:0 0 10px 10px;}
