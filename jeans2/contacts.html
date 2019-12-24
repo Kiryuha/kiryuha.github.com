@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+        <title>G-Shock Iron Lady Джинсы Одесса</title>
+        <meta name="description" content="Продажа женских джинс оптом в Одессе и Украине.">
+        <meta name="keywords" content="Женские джинсы, опт, оптом, Одесса, Украина">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <!--[if lt IE 9]>
+			<script>
+				var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+				for (var i = 0; i < e.length; i++) {
+					document.createElement(e[i]);
+				}
+			</script>
+		<![endif]--> <!--скрипт Реми Шарпа-->
+		<script>
+			var h_hght = 130; // высота шапки
+			var h_mrg = 0;    // отступ когда шапка уже не видна
+			$(function(){
+				$(window).scroll(function(){
+					var top = $(this).scrollTop();
+					var elem = $('nav');
+					var elemHeader = $('header');
+					if (top+h_mrg < h_hght) {
+						elem.css('top', (h_hght-top));
+						elem.removeClass('nav_top_fixed');
+						elemHeader.css('margin-bottom', '0');
+					} else {
+					elem.css('top', h_mrg);
+					elem.addClass('nav_top_fixed');
+					elemHeader.css('margin-bottom', '50px');
+					}
+				});
+			});
+		</script>
+		<link rel='stylesheet' type='text/css' href='css/style.css'>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		
+		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    </head>
+
+
+    <body>
+
+
+    	<header>
+    		<div class='logo_main'>
+    			<a href='index.html'></a><div class='header_info'><p>(067)000-00-00</p></div>
+    		</div>
+     	</header>
+    	
+    	    	
+    	<nav id='nav_top_fixed'>
+    		<div class='buttons_block'>
+    			<a class='buttons' href='index.html' title='Главная'>ГЛАВНАЯ</a>
+    			<a class='buttons' href='new_collection.html' title='Наша новая коллекция'>НОВАЯ КОЛЛЕКЦИЯ</a>
+    			<a class='buttons' href='sale.html' title='Распродажа'>РАСПРОДАЖА</a>
+    			<a class='buttons' href='contacts.html' title='Как с нами связаться'>КОНТАКТЫ</a>
+    		</div>
+	   	</nav>
+
+
+		<div id='contacts_block'>
+			<section>
+				<div class='chapter'><h2>КОНТАКТЫ</h2></div>
+				<article>
+					<adress>
+						<p>Связаться с нами, заказать товар, пообщаться по теме можно и нужно по тел.:
+							<br><span>(067)000-00-00</span></p>
+						<p>Увидеть нас или выпить пива с нами можно по адресу:
+							<br><span>Украина, Одесса, пр-т Ленина, 1, 1</span></p>
+					</adress>
+				</article>
+			</section>
+		</div>
+
+
+		<footer>
+			<div class='footer_info'>
+				<div class='footer_logo'>
+					<div class='footer_logo_img'></div>
+				</div>
+				<div class='footer_text'>
+					<a href='sitemap.html'><u>Карта сайта</u></a><br><br>
+					<p>Одесса, &copy;2016, G-Shock Jeans. Все права зашищены. Любое копирование материалов, только с указанием источника.<br><br>
+					Сайт создан при активном участии <(O_o)></p>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+    </body>
+
+
+</html>
